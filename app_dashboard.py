@@ -155,8 +155,8 @@ elif section == "N-Grams":
     ngram_size = st.selectbox("🔢 Select N-gram size", [1, 2, 3], index=0, format_func=lambda x: f"{x}-gram")
 
     def load_ngrams(n):
-        suicide_path = f'Data/suicide_{n}gram.pkl'
-        non_suicide_path = f'Data/non_suicide_{n}gram.pkl'
+        suicide_path = f'src/Data/suicide_{n}gram.pkl'
+        non_suicide_path = f'src/Data/non_suicide_{n}gram.pkl'
 
         with open(suicide_path, 'rb') as f1, open(non_suicide_path, 'rb') as f2:
             return pickle.load(f1), pickle.load(f2)
