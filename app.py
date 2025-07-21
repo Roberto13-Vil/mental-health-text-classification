@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import os
 import joblib
 from gensim.models import Word2Vec
 from src.utils import preprocess_text, vectorize_text
@@ -27,4 +28,8 @@ def index():
                            text=text)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        host="0.0.0.0",  # Escucha en todas las interfaces
+        port=int(os.environ.get("PORT", 5000)),  # Usa el puerto que te da Railway
+        debug=True
+    )
