@@ -90,6 +90,12 @@
             {% endif %}
         </div>
     {% endif %}
+
+    <div class="image-container">
+        <h2>📊 Model Evaluation</h2>
+        <img src="{{ url_for('static', filename='../Outputs/Images/confusion_matrix.png') }}" alt="Confusion Matrix">
+        <img src="{{ url_for('static', filename='../Outputs/Images/roc_curve.png') }}" alt="ROC Curve">
+    </div>
 </body>
 </html>
 
