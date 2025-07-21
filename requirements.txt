@@ -28,4 +28,5 @@ pydeck==0.9.1
 # 📦 Extras útiles
 tqdm==4.67.1
 requests==2.32.4
+gunicorn
 
