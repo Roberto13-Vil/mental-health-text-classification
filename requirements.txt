@@ -1,5 +1,5 @@
---extra-index-url https://pypi.org/simple
-scipy==1.13.1
+--only-binary=:all:
+scipy==1.12.0
 altair==5.5.0
 emoji==2.14.1
 Flask==3.1.1
