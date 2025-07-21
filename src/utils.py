@@ -1,15 +1,17 @@
 import numpy as np
 import emoji
 import re
+import os
 import string
 import nltk
 import contractions
 
-from nltk.stem import WordNetLemmatizer
+nltk_data_path = os.path.join(os.path.dirname(__file__), '../nltk_data')
+nltk.data.path.append(nltk_data_path)
+
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-
-nltk.data.path.append('../nltk_data')
+from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
