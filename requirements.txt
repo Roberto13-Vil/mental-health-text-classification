@@ -1,3 +1,5 @@
+--extra-index-url https://pypi.org/simple
+scipy==1.13.1
 altair==5.5.0
 emoji==2.14.1
 Flask==3.1.1
@@ -14,7 +16,7 @@ plotly==6.2.0
 pyarrow==20.0.0
 regex==2024.11.6
 requests==2.32.4
-# scikit-learn==1.7.0
+scikit-learn==1.7.0
 seaborn==0.13.2
 streamlit==1.46.1
 tqdm==4.67.1
