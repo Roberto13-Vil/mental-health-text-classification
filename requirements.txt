@@ -11,6 +11,7 @@ xgboost==3.0.2
 
 # 🧠 Modelado y análisis
 joblib==1.5.1
+gensim
 
 # 🧪 Para Flask App
 Flask==3.1.1
