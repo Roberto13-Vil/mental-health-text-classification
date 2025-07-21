@@ -13,6 +13,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
+nltk.download('punkt_tab')
+
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
 
